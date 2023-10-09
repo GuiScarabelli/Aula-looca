@@ -1,0 +1,30 @@
+LINK MAVEN: https://maven.apache.org/download.cgi
+LINK DOCUMENTAÇÂO: https://github.com/Britooo/looca-api
+=============================================================================================================
+Script banco de dados
+CREATE DATABASE testeLooca;
+USE testeLooca;
+
+CREATE TABLE infoPc(
+    idPc INT PRIMARY KEY AUTO_INCREMENT,
+    sistemaOperacional VARCHAR(100),
+    memoriaUso Long,
+    discoUso Long
+);
+
+
+============================================================================================================
+Dependencias que vamos utilizar: 
+    <dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.33</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.britooo</groupId>
+            <artifactId>looca-api</artifactId>
+            <version>2.2.0</version>
+        </dependency>
+    </dependencies>
+
